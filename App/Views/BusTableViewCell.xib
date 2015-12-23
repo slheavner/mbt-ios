@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7702" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="gray" indentationWidth="10" reuseIdentifier="cell" rowHeight="123" id="kbw-5g-Sco" customClass="BusTableViewCellClass" customModule="mbt" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="331" height="123"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="kbw-5g-Sco" id="Rq1-OZ-B3U">
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="isu-a3-g5H">
+                        <rect key="frame" x="-22" y="0.0" width="425" height="37"/>
+                        <color key="backgroundColor" red="0.24211852249999999" green="0.35513034459999998" blue="0.67454051969999995" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="tintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <textView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" editable="NO" text="Bus Status" translatesAutoresizingMaskIntoConstraints="NO" id="Kt2-kd-vgg">
+                        <rect key="frame" x="8" y="53" width="311" height="63"/>
+                        <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                    </textView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="&gt; 45 sec" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Thk-rm-Ran">
+                        <rect key="frame" x="4" y="39" width="319" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bus Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oaU-4h-BcB">
+                        <rect key="frame" x="8" y="10" width="296" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="#" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K9V-wr-RpA">
+                        <rect key="frame" x="240" y="10" width="79" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="79" id="pW4-TJ-Yw7"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="i6X-BO-BXI">
+                        <rect key="frame" x="-22" y="117" width="425" height="5"/>
+                        <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="tintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="centerX" secondItem="Kt2-kd-vgg" secondAttribute="centerX" constant="2" id="0Mo-Qd-vsx"/>
+                    <constraint firstAttribute="bottom" secondItem="i6X-BO-BXI" secondAttribute="bottom" id="0OE-Ud-LZn"/>
+                    <constraint firstItem="oaU-4h-BcB" firstAttribute="baseline" secondItem="K9V-wr-RpA" secondAttribute="baseline" id="5HF-zN-Cjj"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="Thk-rm-Ran" secondAttribute="bottom" constant="54" id="7lI-SC-9Kl"/>
+                    <constraint firstItem="isu-a3-g5H" firstAttribute="leading" secondItem="Rq1-OZ-B3U" secondAttribute="leadingMargin" constant="-30" id="Abv-sf-4lD"/>
+                    <constraint firstItem="oaU-4h-BcB" firstAttribute="leading" secondItem="Kt2-kd-vgg" secondAttribute="leading" id="CvH-R1-jeX"/>
+                    <constraint firstItem="Thk-rm-Ran" firstAttribute="top" secondItem="Rq1-OZ-B3U" secondAttribute="topMargin" constant="31" id="IAc-nE-VWo"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="i6X-BO-BXI" secondAttribute="trailing" constant="-80" id="JAS-az-ZBO"/>
+                    <constraint firstItem="oaU-4h-BcB" firstAttribute="leading" secondItem="Rq1-OZ-B3U" secondAttribute="leadingMargin" id="KG4-Gc-j1j"/>
+                    <constraint firstItem="i6X-BO-BXI" firstAttribute="leading" secondItem="Rq1-OZ-B3U" secondAttribute="leadingMargin" constant="-30" id="QE0-3g-xIr"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="oaU-4h-BcB" secondAttribute="trailing" constant="19" id="Qdg-Q2-VMc"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="isu-a3-g5H" secondAttribute="trailing" constant="-80" id="SUf-I3-4As"/>
+                    <constraint firstItem="oaU-4h-BcB" firstAttribute="top" secondItem="Rq1-OZ-B3U" secondAttribute="topMargin" constant="2" id="Tku-43-L7d"/>
+                    <constraint firstAttribute="centerX" secondItem="i6X-BO-BXI" secondAttribute="centerX" constant="-25" id="Ujy-Lp-zV6"/>
+                    <constraint firstItem="K9V-wr-RpA" firstAttribute="trailing" secondItem="Thk-rm-Ran" secondAttribute="trailing" constant="-4" id="Xmk-iZ-yWs"/>
+                    <constraint firstItem="Thk-rm-Ran" firstAttribute="leading" secondItem="Rq1-OZ-B3U" secondAttribute="leading" constant="4" id="dxm-Jb-UAC"/>
+                    <constraint firstItem="Kt2-kd-vgg" firstAttribute="bottom" secondItem="Rq1-OZ-B3U" secondAttribute="bottomMargin" constant="2" id="g1m-pv-Lx5"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="K9V-wr-RpA" secondAttribute="trailing" constant="4" id="j3l-93-5UU"/>
+                    <constraint firstItem="Thk-rm-Ran" firstAttribute="trailing" secondItem="Kt2-kd-vgg" secondAttribute="trailing" constant="4" id="j5K-Xc-38E"/>
+                    <constraint firstAttribute="centerX" secondItem="isu-a3-g5H" secondAttribute="centerX" constant="-25" id="joM-Ew-bRo"/>
+                    <constraint firstItem="Kt2-kd-vgg" firstAttribute="top" secondItem="oaU-4h-BcB" secondAttribute="bottom" constant="22" id="kMo-RK-R92"/>
+                    <constraint firstItem="Kt2-kd-vgg" firstAttribute="top" secondItem="Rq1-OZ-B3U" secondAttribute="topMargin" constant="45" id="nxw-2F-EjO"/>
+                    <constraint firstItem="isu-a3-g5H" firstAttribute="top" secondItem="Rq1-OZ-B3U" secondAttribute="topMargin" constant="-8" id="pWx-bQ-XwJ"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <connections>
+                <outlet property="nameText" destination="oaU-4h-BcB" id="MVA-tS-LGZ"/>
+                <outlet property="numberText" destination="K9V-wr-RpA" id="pTH-cs-Wrn"/>
+                <outlet property="statusTextView" destination="Kt2-kd-vgg" id="GzP-FY-UgS"/>
+                <outlet property="timeText" destination="Thk-rm-Ran" id="sez-NS-aY1"/>
+            </connections>
+            <point key="canvasLocation" x="196.5" y="375.5"/>
+        </tableViewCell>
+    </objects>
+</document>

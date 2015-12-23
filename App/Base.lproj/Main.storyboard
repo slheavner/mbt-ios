@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="1MI-4N-r0j">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="z60-ak-cOO">
+            <objects>
+                <navigationController id="1MI-4N-r0j" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="vJ3-dw-Mv1">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="vXZ-lx-hvc" kind="relationship" relationship="rootViewController" id="gqV-Bm-QsW"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="G9F-rH-IVH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-90" y="467.95774647887322"/>
+        </scene>
+        <!--Morgantown Bus Tracker-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="Morgantown_Bus___PRT_Tracker" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="Ktt-Vs-uH0" userLabel="bus list table">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="vXZ-lx-hvc" id="lE1-tf-k6k"/>
+                                    <outlet property="delegate" destination="vXZ-lx-hvc" id="STo-kw-QzS"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Ktt-Vs-uH0" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="Fv3-uh-A52"/>
+                            <constraint firstItem="Ktt-Vs-uH0" firstAttribute="bottom" secondItem="2fi-mo-0CV" secondAttribute="top" id="PcB-HA-4sx"/>
+                            <constraint firstAttribute="trailing" secondItem="Ktt-Vs-uH0" secondAttribute="trailing" id="S0a-e1-A0c"/>
+                            <constraint firstItem="Ktt-Vs-uH0" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" id="sh9-pB-zoM"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Morgantown Bus Tracker" id="oRa-ai-tmX">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="lWh-y6-xbX">
+                            <connections>
+                                <segue destination="Jx4-3f-94i" kind="presentation" id="Klr-OL-Xok"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="tableView" destination="Ktt-Vs-uH0" id="bkf-Ko-Txq"/>
+                        <segue destination="KRb-Pq-VnC" kind="show" identifier="map" id="KzP-eU-Zor"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="693" y="467"/>
+        </scene>
+        <!--Map View Controller-->
+        <scene sceneID="8gl-X2-caR">
+            <objects>
+                <viewController id="KRb-Pq-VnC" customClass="MapViewController" customModule="Morgantown_Bus___PRT_Tracker" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Uyf-MM-XE7"/>
+                        <viewControllerLayoutGuide type="bottom" id="qk0-QZ-0DM"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ROm-jz-R3R">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="g4H-l4-h23">
+                        <barButtonItem key="rightBarButtonItem" title="Schedule" id="0KN-3l-VJ1">
+                            <connections>
+                                <action selector="infoButtonPressed:" destination="KRb-Pq-VnC" id="htw-Cz-lSB"/>
+                                <segue destination="9xX-JO-JCd" kind="presentation" identifier="schedule" id="Kne-Ez-1gQ"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="infoButton" destination="0KN-3l-VJ1" id="qha-kI-QQe"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4EK-Un-bFo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1040" y="1182"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Vq5-2n-U3I">
+            <objects>
+                <navigationController id="Jx4-3f-94i" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Tt8-bw-xJG">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="WXa-2O-hxa" kind="relationship" relationship="rootViewController" id="sNw-4r-d2W"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OWi-dm-3AO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1663.125" y="474.2957746478873"/>
+        </scene>
+        <!--Bus Select Controller-->
+        <scene sceneID="iUk-Vf-ImI">
+            <objects>
+                <viewController id="WXa-2O-hxa" customClass="BusSelectController" customModule="Morgantown_Bus___PRT_Tracker" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="FXZ-el-oMD"/>
+                        <viewControllerLayoutGuide type="bottom" id="72M-Iv-aiT"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="PIS-vo-STN">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="5Xw-de-QM7">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="WXa-2O-hxa" id="YNQ-Nk-44j"/>
+                                    <outlet property="delegate" destination="WXa-2O-hxa" id="1Of-sq-LnX"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="5Xw-de-QM7" firstAttribute="bottom" secondItem="72M-Iv-aiT" secondAttribute="top" id="XZj-BQ-ez4"/>
+                            <constraint firstItem="5Xw-de-QM7" firstAttribute="leading" secondItem="PIS-vo-STN" secondAttribute="leading" id="YsH-eE-5Fm"/>
+                            <constraint firstItem="5Xw-de-QM7" firstAttribute="top" secondItem="PIS-vo-STN" secondAttribute="top" id="dkI-cD-tub"/>
+                            <constraint firstAttribute="trailing" secondItem="5Xw-de-QM7" secondAttribute="trailing" id="sJl-Hy-lkS"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="ENM-mH-cMW">
+                        <barButtonItem key="leftBarButtonItem" title="Cancel" id="xBS-sN-wYr">
+                            <connections>
+                                <action selector="onCancelPressed:" destination="WXa-2O-hxa" id="3tZ-IS-jow"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="Done" id="MeH-zb-Xyf">
+                            <connections>
+                                <action selector="onDonePressed:" destination="WXa-2O-hxa" id="ule-lh-x3W"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="tableView" destination="5Xw-de-QM7" id="zA8-UA-ZxU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kDe-fU-K2T" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2383" y="493"/>
+        </scene>
+        <!--Schedule Navigation Controller-->
+        <scene sceneID="POY-mh-aoS">
+            <objects>
+                <navigationController id="9xX-JO-JCd" customClass="ScheduleNavigationController" customModule="Morgantown_Bus___PRT_Tracker" customModuleProvider="target" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="R2L-Wt-Iem">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="8xv-6x-6CW" kind="relationship" relationship="rootViewController" id="fAg-Zb-zdU"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LPZ-BT-s0M" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1682" y="1186"/>
+        </scene>
+        <!--Schedule Controller-->
+        <scene sceneID="uE4-UY-Oyu">
+            <objects>
+                <viewController title="Schedule Controller" id="8xv-6x-6CW" customClass="ScheduleViewController" customModule="Morgantown_Bus___PRT_Tracker" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="b3y-YQ-z8D"/>
+                        <viewControllerLayoutGuide type="bottom" id="WEd-SX-w82"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="vi1-xa-ENI">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="ACK-JG-fDt">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="8xv-6x-6CW" id="lSD-th-QQK"/>
+                                    <outlet property="delegate" destination="8xv-6x-6CW" id="0aY-uo-tUb"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="ACK-JG-fDt" secondAttribute="trailing" id="JrU-eF-tsd"/>
+                            <constraint firstItem="ACK-JG-fDt" firstAttribute="bottom" secondItem="WEd-SX-w82" secondAttribute="top" id="Rk3-Ue-t6O"/>
+                            <constraint firstItem="ACK-JG-fDt" firstAttribute="leading" secondItem="vi1-xa-ENI" secondAttribute="leading" id="e4O-1l-vbj"/>
+                            <constraint firstItem="ACK-JG-fDt" firstAttribute="top" secondItem="vi1-xa-ENI" secondAttribute="top" id="gAg-V4-fvZ"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="iia-cg-Ofs">
+                        <barButtonItem key="rightBarButtonItem" title="Done" id="HCw-jd-7VU">
+                            <connections>
+                                <action selector="donePressed:" destination="8xv-6x-6CW" id="LvY-HE-8Tp"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="tableView" destination="ACK-JG-fDt" id="10c-eN-f0f"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Bic-eZ-w9z" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2391" y="1238"/>
+        </scene>
+    </scenes>
+</document>

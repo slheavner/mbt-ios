@@ -1,0 +1,696 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2201D07B1AFDA35C0069BDAF /* BusSelectController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2201D05D1AFDA35C0069BDAF /* BusSelectController.swift */; };
+		2201D07C1AFDA35C0069BDAF /* BusTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2201D05E1AFDA35C0069BDAF /* BusTableViewCell.xib */; };
+		2201D07D1AFDA35C0069BDAF /* BusTableViewCellClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2201D05F1AFDA35C0069BDAF /* BusTableViewCellClass.swift */; };
+		2201D07E1AFDA35C0069BDAF /* CenteredCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2201D0601AFDA35C0069BDAF /* CenteredCell.xib */; };
+		2201D07F1AFDA35C0069BDAF /* CenteredTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2201D0611AFDA35C0069BDAF /* CenteredTableViewCell.swift */; };
+		2201D0801AFDA35C0069BDAF /* checkboxCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2201D0621AFDA35C0069BDAF /* checkboxCell.xib */; };
+		2201D0811AFDA35C0069BDAF /* checkboxTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2201D0631AFDA35C0069BDAF /* checkboxTableViewCell.swift */; };
+		2201D0821AFDA35C0069BDAF /* customTableCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2201D0641AFDA35C0069BDAF /* customTableCellTableViewCell.swift */; };
+		2201D0831AFDA35C0069BDAF /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2201D0651AFDA35C0069BDAF /* DataManager.swift */; };
+		2201D0841AFDA35C0069BDAF /* JSONSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2201D06F1AFDA35C0069BDAF /* JSONSwift.swift */; };
+		2201D0851AFDA35C0069BDAF /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2201D0701AFDA35C0069BDAF /* MapViewController.swift */; };
+		2201D0861AFDA35C0069BDAF /* NoBussesCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2201D0741AFDA35C0069BDAF /* NoBussesCell.xib */; };
+		2201D0871AFDA35C0069BDAF /* NoBussesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2201D0751AFDA35C0069BDAF /* NoBussesTableViewCell.swift */; };
+		2201D0881AFDA35C0069BDAF /* ScheduleNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2201D0761AFDA35C0069BDAF /* ScheduleNavigationController.swift */; };
+		2201D0891AFDA35C0069BDAF /* ScheduleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2201D0771AFDA35C0069BDAF /* ScheduleViewController.swift */; };
+		2201D08A1AFDA35C0069BDAF /* TextViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2201D0781AFDA35C0069BDAF /* TextViewCell.xib */; };
+		2201D08B1AFDA35C0069BDAF /* TextViewTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2201D0791AFDA35C0069BDAF /* TextViewTableCell.swift */; };
+		2201D0A21AFDA4090069BDAF /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2201D0961AFDA4090069BDAF /* AVFoundation.framework */; };
+		2201D0A31AFDA4090069BDAF /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2201D0971AFDA4090069BDAF /* CoreData.framework */; };
+		2201D0A41AFDA4090069BDAF /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2201D0981AFDA4090069BDAF /* CoreLocation.framework */; };
+		2201D0A51AFDA4090069BDAF /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2201D0991AFDA4090069BDAF /* CoreText.framework */; };
+		2201D0A61AFDA4090069BDAF /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2201D09A1AFDA4090069BDAF /* GLKit.framework */; };
+		2201D0A71AFDA4090069BDAF /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2201D09B1AFDA4090069BDAF /* ImageIO.framework */; };
+		2201D0A81AFDA4090069BDAF /* libc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2201D09C1AFDA4090069BDAF /* libc++.dylib */; };
+		2201D0A91AFDA4090069BDAF /* libicucore.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2201D09D1AFDA4090069BDAF /* libicucore.dylib */; };
+		2201D0AA1AFDA4090069BDAF /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2201D09E1AFDA4090069BDAF /* libz.dylib */; };
+		2201D0AB1AFDA4090069BDAF /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2201D09F1AFDA4090069BDAF /* OpenGLES.framework */; };
+		2201D0AC1AFDA4090069BDAF /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2201D0A01AFDA4090069BDAF /* QuartzCore.framework */; };
+		2201D0AD1AFDA4090069BDAF /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2201D0A11AFDA4090069BDAF /* SystemConfiguration.framework */; };
+		2201D0B21AFDA4A00069BDAF /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2201D0B11AFDA4A00069BDAF /* libsqlite3.dylib */; };
+		2216078B1C2A7E1C00DFCB86 /* Config.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2216078A1C2A7E1C00DFCB86 /* Config.plist */; };
+		2216078D1C2A835700DFCB86 /* example.Config.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2216078C1C2A835700DFCB86 /* example.Config.plist */; };
+		22949C451AFDA2C100FEFCE3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22949C441AFDA2C100FEFCE3 /* AppDelegate.swift */; };
+		22949C471AFDA2C100FEFCE3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22949C461AFDA2C100FEFCE3 /* ViewController.swift */; };
+		22949C4A1AFDA2C100FEFCE3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22949C481AFDA2C100FEFCE3 /* Main.storyboard */; };
+		22949C4C1AFDA2C100FEFCE3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 22949C4B1AFDA2C100FEFCE3 /* Images.xcassets */; };
+		22949C5B1AFDA2C100FEFCE3 /* Morgantown_Bus___PRT_TrackerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22949C5A1AFDA2C100FEFCE3 /* Morgantown_Bus___PRT_TrackerTests.swift */; };
+		22F7F9881AFEA10800700BE7 /* LaunchScreen-mbt.xib in Resources */ = {isa = PBXBuildFile; fileRef = 22F7F9871AFEA10800700BE7 /* LaunchScreen-mbt.xib */; };
+		4E9C327103FF289FB7F43CA1 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DDE4AD73B7059923E17E4891 /* libPods.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		22949C551AFDA2C100FEFCE3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 22949C371AFDA2C100FEFCE3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 22949C3E1AFDA2C100FEFCE3;
+			remoteInfo = "Morgantown Bus & PRT Tracker";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2201D05D1AFDA35C0069BDAF /* BusSelectController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BusSelectController.swift; sourceTree = "<group>"; };
+		2201D05E1AFDA35C0069BDAF /* BusTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BusTableViewCell.xib; sourceTree = "<group>"; };
+		2201D05F1AFDA35C0069BDAF /* BusTableViewCellClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BusTableViewCellClass.swift; sourceTree = "<group>"; };
+		2201D0601AFDA35C0069BDAF /* CenteredCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CenteredCell.xib; sourceTree = "<group>"; };
+		2201D0611AFDA35C0069BDAF /* CenteredTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CenteredTableViewCell.swift; sourceTree = "<group>"; };
+		2201D0621AFDA35C0069BDAF /* checkboxCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = checkboxCell.xib; sourceTree = "<group>"; };
+		2201D0631AFDA35C0069BDAF /* checkboxTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = checkboxTableViewCell.swift; sourceTree = "<group>"; };
+		2201D0641AFDA35C0069BDAF /* customTableCellTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = customTableCellTableViewCell.swift; sourceTree = "<group>"; };
+		2201D0651AFDA35C0069BDAF /* DataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		2201D06F1AFDA35C0069BDAF /* JSONSwift.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONSwift.swift; sourceTree = "<group>"; };
+		2201D0701AFDA35C0069BDAF /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		2201D0741AFDA35C0069BDAF /* NoBussesCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NoBussesCell.xib; sourceTree = "<group>"; };
+		2201D0751AFDA35C0069BDAF /* NoBussesTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoBussesTableViewCell.swift; sourceTree = "<group>"; };
+		2201D0761AFDA35C0069BDAF /* ScheduleNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScheduleNavigationController.swift; sourceTree = "<group>"; };
+		2201D0771AFDA35C0069BDAF /* ScheduleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScheduleViewController.swift; sourceTree = "<group>"; };
+		2201D0781AFDA35C0069BDAF /* TextViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TextViewCell.xib; sourceTree = "<group>"; };
+		2201D0791AFDA35C0069BDAF /* TextViewTableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextViewTableCell.swift; sourceTree = "<group>"; };
+		2201D0961AFDA4090069BDAF /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		2201D0971AFDA4090069BDAF /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		2201D0981AFDA4090069BDAF /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		2201D0991AFDA4090069BDAF /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
+		2201D09A1AFDA4090069BDAF /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
+		2201D09B1AFDA4090069BDAF /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
+		2201D09C1AFDA4090069BDAF /* libc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libc++.dylib"; path = "usr/lib/libc++.dylib"; sourceTree = SDKROOT; };
+		2201D09D1AFDA4090069BDAF /* libicucore.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libicucore.dylib; path = usr/lib/libicucore.dylib; sourceTree = SDKROOT; };
+		2201D09E1AFDA4090069BDAF /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		2201D09F1AFDA4090069BDAF /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		2201D0A01AFDA4090069BDAF /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		2201D0A11AFDA4090069BDAF /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		2201D0AE1AFDA4270069BDAF /* Morgantown Bus & PRT Tracker-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Morgantown Bus & PRT Tracker-Bridging-Header.h"; sourceTree = "<group>"; };
+		2201D0B11AFDA4A00069BDAF /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		2216078A1C2A7E1C00DFCB86 /* Config.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Config.plist; sourceTree = "<group>"; };
+		2216078C1C2A835700DFCB86 /* example.Config.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = example.Config.plist; sourceTree = "<group>"; };
+		22949C3F1AFDA2C100FEFCE3 /* Morgantown Bus & PRT Tracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Morgantown Bus & PRT Tracker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		22949C431AFDA2C100FEFCE3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		22949C441AFDA2C100FEFCE3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		22949C461AFDA2C100FEFCE3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		22949C491AFDA2C100FEFCE3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		22949C4B1AFDA2C100FEFCE3 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		22949C541AFDA2C100FEFCE3 /* Morgantown Bus & PRT TrackerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Morgantown Bus & PRT TrackerTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		22949C591AFDA2C100FEFCE3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		22949C5A1AFDA2C100FEFCE3 /* Morgantown_Bus___PRT_TrackerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Morgantown_Bus___PRT_TrackerTests.swift"; sourceTree = "<group>"; };
+		22F7F9871AFEA10800700BE7 /* LaunchScreen-mbt.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "LaunchScreen-mbt.xib"; sourceTree = "<group>"; };
+		8025373BAD817E3ACCC34425 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		DDE4AD73B7059923E17E4891 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		DFC1245C572852CA1A27615E /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		22949C3C1AFDA2C100FEFCE3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2201D0B21AFDA4A00069BDAF /* libsqlite3.dylib in Frameworks */,
+				2201D0A21AFDA4090069BDAF /* AVFoundation.framework in Frameworks */,
+				2201D0A31AFDA4090069BDAF /* CoreData.framework in Frameworks */,
+				2201D0A41AFDA4090069BDAF /* CoreLocation.framework in Frameworks */,
+				2201D0A51AFDA4090069BDAF /* CoreText.framework in Frameworks */,
+				2201D0A61AFDA4090069BDAF /* GLKit.framework in Frameworks */,
+				2201D0A71AFDA4090069BDAF /* ImageIO.framework in Frameworks */,
+				2201D0A81AFDA4090069BDAF /* libc++.dylib in Frameworks */,
+				2201D0A91AFDA4090069BDAF /* libicucore.dylib in Frameworks */,
+				2201D0AA1AFDA4090069BDAF /* libz.dylib in Frameworks */,
+				2201D0AB1AFDA4090069BDAF /* OpenGLES.framework in Frameworks */,
+				2201D0AC1AFDA4090069BDAF /* QuartzCore.framework in Frameworks */,
+				2201D0AD1AFDA4090069BDAF /* SystemConfiguration.framework in Frameworks */,
+				4E9C327103FF289FB7F43CA1 /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		22949C511AFDA2C100FEFCE3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		221607861C2A7D0900DFCB86 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				2201D0701AFDA35C0069BDAF /* MapViewController.swift */,
+				2201D0761AFDA35C0069BDAF /* ScheduleNavigationController.swift */,
+				2201D0771AFDA35C0069BDAF /* ScheduleViewController.swift */,
+				22949C461AFDA2C100FEFCE3 /* ViewController.swift */,
+				2201D05D1AFDA35C0069BDAF /* BusSelectController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		221607871C2A7D4500DFCB86 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				2201D05E1AFDA35C0069BDAF /* BusTableViewCell.xib */,
+				2201D05F1AFDA35C0069BDAF /* BusTableViewCellClass.swift */,
+				2201D0601AFDA35C0069BDAF /* CenteredCell.xib */,
+				2201D0611AFDA35C0069BDAF /* CenteredTableViewCell.swift */,
+				2201D0621AFDA35C0069BDAF /* checkboxCell.xib */,
+				2201D0631AFDA35C0069BDAF /* checkboxTableViewCell.swift */,
+				2201D0641AFDA35C0069BDAF /* customTableCellTableViewCell.swift */,
+				2201D0741AFDA35C0069BDAF /* NoBussesCell.xib */,
+				2201D0751AFDA35C0069BDAF /* NoBussesTableViewCell.swift */,
+				2201D0781AFDA35C0069BDAF /* TextViewCell.xib */,
+				2201D0791AFDA35C0069BDAF /* TextViewTableCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		221607891C2A7D7900DFCB86 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				2201D0651AFDA35C0069BDAF /* DataManager.swift */,
+				2201D06F1AFDA35C0069BDAF /* JSONSwift.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		2216078E1C2A9B7C00DFCB86 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				22949C441AFDA2C100FEFCE3 /* AppDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		22949C361AFDA2C100FEFCE3 = {
+			isa = PBXGroup;
+			children = (
+				2201D0B11AFDA4A00069BDAF /* libsqlite3.dylib */,
+				2201D0961AFDA4090069BDAF /* AVFoundation.framework */,
+				2201D0971AFDA4090069BDAF /* CoreData.framework */,
+				2201D0981AFDA4090069BDAF /* CoreLocation.framework */,
+				2201D0991AFDA4090069BDAF /* CoreText.framework */,
+				2201D09A1AFDA4090069BDAF /* GLKit.framework */,
+				2201D09B1AFDA4090069BDAF /* ImageIO.framework */,
+				2201D09C1AFDA4090069BDAF /* libc++.dylib */,
+				2201D09D1AFDA4090069BDAF /* libicucore.dylib */,
+				2201D09E1AFDA4090069BDAF /* libz.dylib */,
+				2201D09F1AFDA4090069BDAF /* OpenGLES.framework */,
+				2201D0A01AFDA4090069BDAF /* QuartzCore.framework */,
+				2201D0A11AFDA4090069BDAF /* SystemConfiguration.framework */,
+				22949C411AFDA2C100FEFCE3 /* App */,
+				22949C571AFDA2C100FEFCE3 /* Tests */,
+				22949C401AFDA2C100FEFCE3 /* Products */,
+				BDAA94EE39E037EC6A47379B /* Pods */,
+				24B07F0C12DD3FBFF1DC28B1 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		22949C401AFDA2C100FEFCE3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				22949C3F1AFDA2C100FEFCE3 /* Morgantown Bus & PRT Tracker.app */,
+				22949C541AFDA2C100FEFCE3 /* Morgantown Bus & PRT TrackerTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		22949C411AFDA2C100FEFCE3 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				2216078E1C2A9B7C00DFCB86 /* Application */,
+				221607861C2A7D0900DFCB86 /* Controllers */,
+				221607891C2A7D7900DFCB86 /* Helpers */,
+				221607871C2A7D4500DFCB86 /* Views */,
+				22949C481AFDA2C100FEFCE3 /* Main.storyboard */,
+				22949C4B1AFDA2C100FEFCE3 /* Images.xcassets */,
+				22949C421AFDA2C100FEFCE3 /* Supporting Files */,
+				2201D0AE1AFDA4270069BDAF /* Morgantown Bus & PRT Tracker-Bridging-Header.h */,
+				22F7F9871AFEA10800700BE7 /* LaunchScreen-mbt.xib */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		22949C421AFDA2C100FEFCE3 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2216078C1C2A835700DFCB86 /* example.Config.plist */,
+				2216078A1C2A7E1C00DFCB86 /* Config.plist */,
+				22949C431AFDA2C100FEFCE3 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		22949C571AFDA2C100FEFCE3 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				22949C5A1AFDA2C100FEFCE3 /* Morgantown_Bus___PRT_TrackerTests.swift */,
+				22949C581AFDA2C100FEFCE3 /* Supporting Files */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		22949C581AFDA2C100FEFCE3 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				22949C591AFDA2C100FEFCE3 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		24B07F0C12DD3FBFF1DC28B1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DDE4AD73B7059923E17E4891 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BDAA94EE39E037EC6A47379B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DFC1245C572852CA1A27615E /* Pods.debug.xcconfig */,
+				8025373BAD817E3ACCC34425 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		22949C3E1AFDA2C100FEFCE3 /* Morgantown Bus & PRT Tracker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 22949C5E1AFDA2C100FEFCE3 /* Build configuration list for PBXNativeTarget "Morgantown Bus & PRT Tracker" */;
+			buildPhases = (
+				897B45BC89F83D0554701203 /* Check Pods Manifest.lock */,
+				22949C3B1AFDA2C100FEFCE3 /* Sources */,
+				22949C3C1AFDA2C100FEFCE3 /* Frameworks */,
+				22949C3D1AFDA2C100FEFCE3 /* Resources */,
+				5EC94C98F6C892DEA9EE3795 /* Embed Pods Frameworks */,
+				AB3B2A067BCC72AF930FB216 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Morgantown Bus & PRT Tracker";
+			productName = "Morgantown Bus & PRT Tracker";
+			productReference = 22949C3F1AFDA2C100FEFCE3 /* Morgantown Bus & PRT Tracker.app */;
+			productType = "com.apple.product-type.application";
+		};
+		22949C531AFDA2C100FEFCE3 /* Morgantown Bus & PRT TrackerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 22949C611AFDA2C100FEFCE3 /* Build configuration list for PBXNativeTarget "Morgantown Bus & PRT TrackerTests" */;
+			buildPhases = (
+				22949C501AFDA2C100FEFCE3 /* Sources */,
+				22949C511AFDA2C100FEFCE3 /* Frameworks */,
+				22949C521AFDA2C100FEFCE3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				22949C561AFDA2C100FEFCE3 /* PBXTargetDependency */,
+			);
+			name = "Morgantown Bus & PRT TrackerTests";
+			productName = "Morgantown Bus & PRT TrackerTests";
+			productReference = 22949C541AFDA2C100FEFCE3 /* Morgantown Bus & PRT TrackerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		22949C371AFDA2C100FEFCE3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftMigration = 0700;
+				LastSwiftUpdateCheck = 0700;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "Samuel Heavner";
+				TargetAttributes = {
+					22949C3E1AFDA2C100FEFCE3 = {
+						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = XP5G42WM4Q;
+					};
+					22949C531AFDA2C100FEFCE3 = {
+						CreatedOnToolsVersion = 6.3.1;
+						TestTargetID = 22949C3E1AFDA2C100FEFCE3;
+					};
+				};
+			};
+			buildConfigurationList = 22949C3A1AFDA2C100FEFCE3 /* Build configuration list for PBXProject "mbt-ios" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 22949C361AFDA2C100FEFCE3;
+			productRefGroup = 22949C401AFDA2C100FEFCE3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				22949C3E1AFDA2C100FEFCE3 /* Morgantown Bus & PRT Tracker */,
+				22949C531AFDA2C100FEFCE3 /* Morgantown Bus & PRT TrackerTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		22949C3D1AFDA2C100FEFCE3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				22F7F9881AFEA10800700BE7 /* LaunchScreen-mbt.xib in Resources */,
+				22949C4A1AFDA2C100FEFCE3 /* Main.storyboard in Resources */,
+				2201D08A1AFDA35C0069BDAF /* TextViewCell.xib in Resources */,
+				2201D07E1AFDA35C0069BDAF /* CenteredCell.xib in Resources */,
+				2201D0801AFDA35C0069BDAF /* checkboxCell.xib in Resources */,
+				2201D0861AFDA35C0069BDAF /* NoBussesCell.xib in Resources */,
+				2201D07C1AFDA35C0069BDAF /* BusTableViewCell.xib in Resources */,
+				2216078B1C2A7E1C00DFCB86 /* Config.plist in Resources */,
+				2216078D1C2A835700DFCB86 /* example.Config.plist in Resources */,
+				22949C4C1AFDA2C100FEFCE3 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		22949C521AFDA2C100FEFCE3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5EC94C98F6C892DEA9EE3795 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		897B45BC89F83D0554701203 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		AB3B2A067BCC72AF930FB216 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		22949C3B1AFDA2C100FEFCE3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2201D0891AFDA35C0069BDAF /* ScheduleViewController.swift in Sources */,
+				22949C471AFDA2C100FEFCE3 /* ViewController.swift in Sources */,
+				2201D0871AFDA35C0069BDAF /* NoBussesTableViewCell.swift in Sources */,
+				2201D0831AFDA35C0069BDAF /* DataManager.swift in Sources */,
+				2201D07D1AFDA35C0069BDAF /* BusTableViewCellClass.swift in Sources */,
+				2201D0851AFDA35C0069BDAF /* MapViewController.swift in Sources */,
+				2201D08B1AFDA35C0069BDAF /* TextViewTableCell.swift in Sources */,
+				2201D07F1AFDA35C0069BDAF /* CenteredTableViewCell.swift in Sources */,
+				2201D07B1AFDA35C0069BDAF /* BusSelectController.swift in Sources */,
+				2201D0821AFDA35C0069BDAF /* customTableCellTableViewCell.swift in Sources */,
+				2201D0841AFDA35C0069BDAF /* JSONSwift.swift in Sources */,
+				2201D0811AFDA35C0069BDAF /* checkboxTableViewCell.swift in Sources */,
+				2201D0881AFDA35C0069BDAF /* ScheduleNavigationController.swift in Sources */,
+				22949C451AFDA2C100FEFCE3 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		22949C501AFDA2C100FEFCE3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				22949C5B1AFDA2C100FEFCE3 /* Morgantown_Bus___PRT_TrackerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		22949C561AFDA2C100FEFCE3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 22949C3E1AFDA2C100FEFCE3 /* Morgantown Bus & PRT Tracker */;
+			targetProxy = 22949C551AFDA2C100FEFCE3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		22949C481AFDA2C100FEFCE3 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				22949C491AFDA2C100FEFCE3 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		22949C5C1AFDA2C100FEFCE3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		22949C5D1AFDA2C100FEFCE3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		22949C5F1AFDA2C100FEFCE3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DFC1245C572852CA1A27615E /* Pods.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = App/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				OTHER_LDFLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.slheavner.mbt;
+				PRODUCT_NAME = "Morgantown Bus & PRT Tracker";
+				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "App/Morgantown Bus & PRT Tracker-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		22949C601AFDA2C100FEFCE3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8025373BAD817E3ACCC34425 /* Pods.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = App/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				OTHER_LDFLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.slheavner.mbt;
+				PRODUCT_NAME = "Morgantown Bus & PRT Tracker";
+				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "App/Morgantown Bus & PRT Tracker-Bridging-Header.h";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		22949C621AFDA2C100FEFCE3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = "";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Morgantown Bus & PRT TrackerTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.slheavner.wvubus.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Morgantown Bus & PRT Tracker.app/Morgantown Bus & PRT Tracker";
+			};
+			name = Debug;
+		};
+		22949C631AFDA2C100FEFCE3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = "";
+				INFOPLIST_FILE = "Morgantown Bus & PRT TrackerTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.slheavner.wvubus.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Morgantown Bus & PRT Tracker.app/Morgantown Bus & PRT Tracker";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		22949C3A1AFDA2C100FEFCE3 /* Build configuration list for PBXProject "mbt-ios" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				22949C5C1AFDA2C100FEFCE3 /* Debug */,
+				22949C5D1AFDA2C100FEFCE3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		22949C5E1AFDA2C100FEFCE3 /* Build configuration list for PBXNativeTarget "Morgantown Bus & PRT Tracker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				22949C5F1AFDA2C100FEFCE3 /* Debug */,
+				22949C601AFDA2C100FEFCE3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		22949C611AFDA2C100FEFCE3 /* Build configuration list for PBXNativeTarget "Morgantown Bus & PRT TrackerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				22949C621AFDA2C100FEFCE3 /* Debug */,
+				22949C631AFDA2C100FEFCE3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 22949C371AFDA2C100FEFCE3 /* Project object */;
+}
